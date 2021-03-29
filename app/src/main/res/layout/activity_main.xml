@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="48dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Credit Card Number"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/creditCardNumberField"
+        style="@style/EditTextCustomized"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="creditCardNumber"
+        android:ems="12"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Email Address"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailField"
+        style="@style/EditTextCustomized"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/creditCardNumberField"
+        app:layout_constraintStart_toStartOf="@+id/creditCardNumberField"
+        app:layout_constraintTop_toBottomOf="@+id/creditCardNumberField" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="First Name"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/firstNameField"
+        style="@style/EditTextCustomized"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="cc-given-name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/creditCardNumberField"
+        app:layout_constraintStart_toStartOf="@+id/creditCardNumberField"
+        app:layout_constraintTop_toBottomOf="@+id/creditCardNumberField" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Family Name"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/familyNameField"
+        style="@style/EditTextCustomized"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="family-name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/creditCardNumberField"
+        app:layout_constraintStart_toStartOf="@+id/creditCardNumberField"
+        app:layout_constraintTop_toBottomOf="@+id/creditCardNumberField" />
+
+</LinearLayout>
